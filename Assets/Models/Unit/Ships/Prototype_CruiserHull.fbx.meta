@@ -3,7 +3,22 @@ guid: 18ac64fa3f77c4a41af79b662ad17706
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beam
+    second: {fileID: 2100000, guid: ee721c9b98c86044cbde6d5abfbef316, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 5c1fd90a297daec46b407890d9c8a3e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quarters
+    second: {fileID: 2100000, guid: 496f6314b75088b44ae64e2418f25b57, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

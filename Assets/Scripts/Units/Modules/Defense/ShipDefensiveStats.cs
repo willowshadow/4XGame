@@ -11,6 +11,10 @@ namespace Units
         public float hullHealth;
         public float armorHealth;
         public float shieldHealth;
+        
+        public float maxHullHealth;
+        public float maxArmorHealth;
+        public float maxShieldHealth;
 
         public void CalculateDamage(OffensiveData damageStats)
         {
@@ -33,6 +37,7 @@ namespace Units
         public void SetupHull(ShipHullModuleData data)
         {
             hullHealth = data.hullHealth;
+            maxHullHealth = hullHealth;
         }
 
         public void SetupSecondary(DefenseModuleData data)
@@ -41,9 +46,11 @@ namespace Units
             {
                 case DefenseModuleType.Shield:
                     shieldHealth = data.value;
+                    maxShieldHealth = shieldHealth;
                     break;
                 case DefenseModuleType.Armor:
                     armorHealth = data.value;
+                    maxArmorHealth = armorHealth;
                     break;
             }
         }

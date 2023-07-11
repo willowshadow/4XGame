@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca899cb114e48d6bc2457dec8e61585, type: 3}
+  m_Name: Cruiser Hull
+  m_EditorClassIdentifier: 
+  moduleIcon: {fileID: 0}
+  partName: 
+  weightCost: 0
+  energyCost: 0
+  price: 0
+  shipClass: 2
+  className: Vorathian Class
+  hullHealth: 1200
+  weaponTurretSlots: 4
+  defenseSlots: 3
+  engineSlots: 2
+  powerSourceSlots: 1

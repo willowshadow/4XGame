@@ -23,6 +23,7 @@ namespace Units.Modules.Ammo
         {
             rB.AddForce(owner.transform.forward*owner.weaponData.fireVelocity,ForceMode.VelocityChange);
             Destroy(gameObject,10f);
+            
         }
     }
 }
