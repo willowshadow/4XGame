@@ -1,0 +1,11 @@
+Model Information:
+* title:	Starship Troopers Fast attack ship
+* source:	https://sketchfab.com/3d-models/starship-troopers-fast-attack-ship-fdbc361bd1634fb4b887db2621403d88
+* author:	78887 (https://sketchfab.com/jiagoushi)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Starship Troopers Fast attack ship" (https://sketchfab.com/3d-models/starship-troopers-fast-attack-ship-fdbc361bd1634fb4b887db2621403d88) by 78887 (https://sketchfab.com/jiagoushi) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

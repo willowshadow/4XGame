@@ -1,4 +1,5 @@
 ﻿using Generic_Interfaces;
+using UnityEngine;
 
 namespace Units
 {
@@ -6,7 +7,8 @@ namespace Units
     {
         public IBaseUnit OnSelect();
         public void OnDeselect();
-
-        public void OnAction();
+        public void OnActionSelf();
+        public void OnActionAtPosition(Vector3 position);
+        public Transform GetTransform();
     }
 }

@@ -7,10 +7,20 @@ namespace Environment
 {
     public class Asteroid : MonoBehaviour
     {
+        public float rotationSpeed;
+
+        private void Awake()
+        {
+            var startRot = Random.rotation;
+            transform.rotation = startRot;
+        }
+
         public void Start()
         {
             var random = Random.insideUnitSphere;
-            transform.DORotate(random, .11f, RotateMode.FastBeyond360).SetLoops(-1,LoopType.Incremental);
+            var rotDif = random - transform.eulerAngles;
+            
+            transform.DORotate(random, rotDif.magnitude/rotationSpeed, RotateMode.FastBeyond360).SetLoops(-1,LoopType.Incremental);
         }
     }
 }

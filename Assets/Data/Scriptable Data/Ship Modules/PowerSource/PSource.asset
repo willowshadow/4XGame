@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moduleIcon: {fileID: 0}
   partName: Nuclear Reactor
-  weightCost: 0
+  weightCost: 500
   energyCost: 0
   price: 100
+  maxCapacity: 0
   rateOfCharge: 10

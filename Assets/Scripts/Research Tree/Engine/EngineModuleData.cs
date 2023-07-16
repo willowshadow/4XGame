@@ -8,11 +8,6 @@ namespace Research_Tree.Engine
         /// <summary>
         /// Max Movement Speed
         /// </summary>
-        public float engineMaxSpeed;
-        
-        /// <summary>
-        /// Max Rotation Speed
-        /// </summary>
-        public float traverseMaxSpeed;
+        public float engineHorsePower;
     }
 }

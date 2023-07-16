@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca899cb114e48d6bc2457dec8e61585, type: 3}
   m_Name: Destroyer Hull
   m_EditorClassIdentifier: 
-  moduleIcon: {fileID: 0}
+  moduleIcon: {fileID: 21300000, guid: 3b040d6900fe4884db94c5d7b4d29f17, type: 3}
   partName: 
-  weightCost: 0
+  weightCost: 3000
   energyCost: 0
   price: 0
   shipClass: 1
   className: Imeperator Class
-  hullHealth: 650
+  hullHealth: 6500
   weaponTurretSlots: 4
   defenseSlots: 3
-  engineSlots: 2
+  engineSlots: 1
   powerSourceSlots: 1

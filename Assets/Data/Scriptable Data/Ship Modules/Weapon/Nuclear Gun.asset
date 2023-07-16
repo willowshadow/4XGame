@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moduleIcon: {fileID: 0}
   partName: Nuclear Gun
-  weightCost: 5
+  weightCost: 100
   energyCost: 5
   price: 5
   offensiveData:

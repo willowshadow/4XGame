@@ -1,0 +1,11 @@
+Model Information:
+* title:	Asteroide Itokawa
+* source:	https://sketchfab.com/3d-models/asteroide-itokawa-f1886be573844e3fbb90f03f82ff38bb
+* author:	fundacionastromania (https://sketchfab.com/fundacionastromania)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Asteroide Itokawa" (https://sketchfab.com/3d-models/asteroide-itokawa-f1886be573844e3fbb90f03f82ff38bb) by fundacionastromania (https://sketchfab.com/fundacionastromania) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

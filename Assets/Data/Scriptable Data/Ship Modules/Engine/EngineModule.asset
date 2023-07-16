@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moduleIcon: {fileID: 0}
   partName: 
-  weightCost: 0
+  weightCost: 1000
   energyCost: 0
   price: 0
-  engineMaxSpeed: 10
-  traverseMaxSpeed: 50
+  engineHorsePower: 100000

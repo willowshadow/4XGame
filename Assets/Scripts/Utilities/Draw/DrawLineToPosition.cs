@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using DG.Tweening;
+using UnityEngine;
 
 namespace Utilities.Draw
 {
@@ -6,11 +8,10 @@ namespace Utilities.Draw
     {
         [SerializeField] private Vector3 targetPosition; // target position as Vector3
         [SerializeField] private LineRenderer lineRenderer;  // LineRenderer component
-
-        private void Start()
+        [SerializeField] private Transform destinationPoint;
+        
+        private void Start()    
         {
-          
-
             // Initially line renderer should be disabled
             lineRenderer.enabled = false;
             
@@ -30,20 +31,28 @@ namespace Utilities.Draw
             }
         }
 
+        private void LateUpdate()
+        {
+            if (lineRenderer.enabled) destinationPoint.position = targetPosition;
+        }
+
         public void SetPositions(Vector3 newTargetPosition)
         {
-            targetPosition = newTargetPosition;
+            destinationPoint.position = targetPosition = newTargetPosition;
             EnableLineDrawing();
         }
 
         public void EnableLineDrawing()
         {
+            destinationPoint.gameObject.SetActive(true);
+            destinationPoint.DOPunchScale(Vector3.one*3, 0.4f);
             lineRenderer.enabled = true;
         }
 
         public void DisableLineDrawing()
         {
             lineRenderer.enabled = false;
+            destinationPoint.gameObject.SetActive(false);
         }
     }
 }

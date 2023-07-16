@@ -7,6 +7,8 @@ namespace Research_Tree.Weapons
     [CreateAssetMenu(fileName = "WeaponModule", menuName = "Data/Create Weapon")]
     public class WeaponModuleData : ShipModuleData
     {
+        public WeaponClass weaponClass;
+        public WeaponSize weaponSize;
         public OffensiveData offensiveData;
         [PropertyTooltip("How many barrels does the weapon have from which the projectiles fire")]
         [BoxGroup("Weapon Stats")]public int projectileSourceCount;
@@ -20,12 +22,26 @@ namespace Research_Tree.Weapons
     [Serializable]
     public class OffensiveData
     {
-        [BoxGroup("Damage Stats")]public int dps;
-        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int shieldDamage;
-        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int armorDamage;
-        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int hullDamage;
-        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int shieldPenetration;
-        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int armorPenetration;
+        [BoxGroup("Damage Stats")]public int dps; // 300
+        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int shieldDamage; // 50% -> 150
+        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int armorDamage;// 90% -> 280
+        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int hullDamage;// 100 -> 300
         
+        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int shieldPenetration; // 20% -> 60 -> Armor 
+        [BoxGroup("Damage Stats")][PropertyRange(0,300)] public int armorPenetration; // 30% -> 90 -> Hull
+    }
+
+    public enum WeaponClass
+    {
+        Projectile,
+        Guided,
+        Laser
+    }
+
+    public enum WeaponSize
+    {
+        S,
+        M,
+        L
     }
 }

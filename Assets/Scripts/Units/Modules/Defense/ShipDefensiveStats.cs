@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Research_Tree.Defense;
 using Research_Tree.Ship_Hulls;
 using Research_Tree.Weapons;
@@ -40,19 +41,23 @@ namespace Units
             maxHullHealth = hullHealth;
         }
 
-        public void SetupSecondary(DefenseModuleData data)
+        public void SetupSecondary(List<DefenseModuleData> data)
         {
-            switch (data.defenseModuleType)
+            foreach (var defenseModuleData in data)
             {
-                case DefenseModuleType.Shield:
-                    shieldHealth = data.value;
-                    maxShieldHealth = shieldHealth;
-                    break;
-                case DefenseModuleType.Armor:
-                    armorHealth = data.value;
-                    maxArmorHealth = armorHealth;
-                    break;
+                switch (defenseModuleData.defenseModuleType)
+                {
+                    case DefenseModuleType.Shield:
+                        shieldHealth += defenseModuleData.value;
+                        maxShieldHealth = shieldHealth;
+                        break;
+                    case DefenseModuleType.Armor:
+                        armorHealth += defenseModuleData.value;
+                        maxArmorHealth = armorHealth;
+                        break;
+                }
             }
+           
         }
 
         public bool IsDead()

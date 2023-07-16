@@ -12,7 +12,8 @@ namespace Map
         public Collider mapCameraCollider;
         
         public int asteroidCount;
-        public GameObject asteroidPrefab;
+        public float scaleMinRange,scaleMaxRange;
+        public GameObject[] asteroidPrefab;
         public Transform asteroidParent;
 
         private void OnValidate()
@@ -36,15 +37,17 @@ namespace Map
             mapCameraCollider.transform.localScale = new Vector3(mapSize.x , 1000, mapSize.y);
         }
 
-        public void SpawnAsteroid()
+        private void SpawnAsteroid()
         {
             Bounds bounds = mapCameraCollider.bounds;
             float offsetX = Random.Range(-bounds.extents.x, bounds.extents.x);
-            float offsetY = Random.Range(-bounds.extents.y, 0);
+            float offsetY = Random.Range(-bounds.extents.y, -100);
             float offsetZ = Random.Range(-bounds.extents.z, bounds.extents.z);
- 
-            GameObject newHazard = Instantiate(asteroidPrefab,asteroidParent);
+
+            var randomAsteroid = Random.Range(0, asteroidPrefab.Length);
+            GameObject newHazard = Instantiate(asteroidPrefab[randomAsteroid],asteroidParent);
             newHazard.transform.position = bounds.center + new Vector3(offsetX, offsetY, offsetZ);
+            newHazard.transform.localScale *= Random.Range(scaleMinRange, scaleMaxRange);
         }
 
         private void OnDrawGizmosSelected()
